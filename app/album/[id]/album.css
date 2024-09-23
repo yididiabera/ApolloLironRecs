@@ -1,0 +1,58 @@
+.album-main {
+  margin: 0;
+  padding: 3rem 5rem 3rem 6rem;
+}
+
+.album-head {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.album-title {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.album-image {
+  border: 2px solid white;
+  border-radius: 1rem;
+  margin: 0rem 2rem 0rem 0rem;
+}
+
+.album-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.album-title h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.album-artist-names {
+  display: flex;
+}
+
+.album-artist-name {
+  font-size: 30px;
+  transition: all 0.1s ease-in-out;
+}
+
+.album-artist-name:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.album-release {
+  font-size: 20px;
+}
+
+.album-tracks {
+  width: 100%;
+}
+
+.album-main h2 {
+  font-size: 40px;
+}

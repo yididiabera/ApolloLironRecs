@@ -1,0 +1,17 @@
+.notification-sider {
+  position: fixed;
+  bottom: -50px;
+  right: 50px;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.notification-sider.visible {
+  transform: translateY(-120px);
+  opacity: 1;
+}

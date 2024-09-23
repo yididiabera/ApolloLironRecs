@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-family: "Inter", sans-serif;
+
+  --font-size-h1: 3.815rem;
+  --font-size-h2: 3.052rem;
+  --font-size-h3: 2.441rem;
+  --font-size-h4: 1.953rem;
+  --font-size-h5: 1.563rem;
+  --font-size-h6: 1.25rem;
+  --font-size-p: 1rem;
+  --font-size-small: 0.8rem;
+
+  --color-background: hsl(257, 100%, 0%);
+  --color-primary: #45fc5e;
+  --color-secondary: #167aac;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: hsl(188, 78%, 41%);
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-white: #fff;
+  --color-black: #000;
+}
+
+.main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  z-index: 0;
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.main::before {
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.main::after {
+  content: "";
+  background-image: url(/assets/grid-line.png);
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  filter: invert(1);
+}
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+
+  background-image: radial-gradient(
+      circle at 27% 37%,
+      rgba(28, 218, 238, 1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 97% 21%,
+      rgba(41, 109, 241, 1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 52% 99%,
+      rgba(214, 241, 41, 1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(circle at 10% 29%, rgba(41, 241, 91, 1) 0%, transparent 50%),
+    radial-gradient(
+      circle at 97% 96%,
+      rgba(241, 147, 41, 1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(circle at 33% 50%, rgba(241, 41, 41, 1) 0%, transparent 50%),
+    radial-gradient(
+      circle at 79% 53%,
+      rgba(241, 41, 180, 1) 0%,
+      transparent 50%
+    );
+
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.25;
+}
+
+.app {
+  @apply relative z-10;
+}
+
+.white_gradient {
+  @apply bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent;
+}
+
+.spotify_link {
+  @apply flex items-center gap-2 px-5 py-1.5 bg-green-500 rounded-md text-black font-semibold transition-colors hover:bg-green-500 hover:text-white;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-black/20 shadow-[inset_10px_-50px_94px_0_rgb(50,50,50,0.2)] backdrop-blur p-5;
+}
+
+/* Form Component */
+.form_textarea {
+  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+.form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+/* PlaylistCard */
+.playlist_card {
+  @apply bg-black/20 rounded-xl shadow-lg p-5 h-[250px] w-[200px] flex flex-col items-center gap-3 hover:bg-white/5 cursor-pointer transition-colors duration-200;
+}

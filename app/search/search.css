@@ -1,0 +1,103 @@
+/* search.css */
+body,
+html {
+  background: linear-gradient(
+    135deg,
+    #1c1b29,
+    #0d0c16
+  ); /* Dark purple to almost black */
+  color: #e0e0e0; /* Light text for contrast */
+}
+
+.search-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.search-filter {
+  display: flex;
+  width: 700px;
+  max-width: 60%;
+  height: 50px;
+  background-color: transparent;
+  margin: 1rem;
+}
+
+.search-filter > input {
+  flex: 2;
+  width: 100%;
+  height: calc(100% - 4px);
+  border: none;
+  outline: none;
+  font-size: var(--font-size-p);
+  border: 2px solid #3d2b55; /* Subtle dark purple border */
+  border-top-left-radius: 999px;
+  border-bottom-left-radius: 999px;
+  padding: 0 1.5rem;
+  transition: 0.3s ease;
+  background-color: #1a1925; /* Very dark background for input */
+  color: #e0e0e0; /* Light text color */
+}
+
+.search-filter > input:focus,
+.search-filter > input:valid {
+  border-color: #6a4e9b; /* Dark purple on focus */
+  border-right: none;
+}
+
+.search-filter > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0.5;
+  width: 100%;
+  border: none;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  background-color: #3d2b55; /* Dark purple button */
+  color: white;
+  font-size: var(--font-size-h6);
+  height: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-filter > button:hover {
+  background-color: #6a4e9b; /* Lighter purple on hover */
+}
+
+.search-header {
+  color: #6a4e9b; /* Purple header text */
+}
+
+.search-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a2a73; /* Dark purple background */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-button:hover {
+  background-color: #6a4e9b; /* Lighter purple on hover */
+}
+
+.artist-search-container h2,
+.album-search-container h2 {
+  color: #6a4e9b; /* Subtle dark purple section headers */
+}
+
+.loading {
+  text-align: center;
+  font-size: var(--font-size-h5);
+  color: #6a4e9b; /* Purple loading text */
+  margin: 3rem;
+}

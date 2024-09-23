@@ -1,0 +1,132 @@
+.login-main {
+  @apply absolute top-0 left-0 min-w-full min-h-screen;
+}
+
+.login-wrapper {
+  background-color: var(--color-background);
+  width: 336px;
+  color: var(--color-white);
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  margin-right: 80px;
+}
+
+.login-wrapper > h2 {
+  text-align: center;
+  font-size: 29px;
+}
+
+.login-wrapper .form {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  margin: 24px 0;
+}
+
+.login-wrapper .form input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-secondary);
+  border-radius: 10px;
+  padding: 1rem 2.25rem 1rem 1rem;
+  font-size: 13px;
+}
+
+.login-wrapper .form input:focus {
+  border-color: var(--color-primary);
+}
+
+.login-wrapper .form .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  font-size: var(--font-size-p);
+  color: var(--color-secondary);
+}
+
+.login-wrapper .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-size-small);
+  align-items: center;
+  margin: -15px 0 15px;
+}
+
+.login-wrapper .remember-forget label input {
+  accent-color: white;
+  margin: 4px;
+}
+
+.login-wrapper .remember-forget a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-wrapper .remember-forget a:hover {
+  text-decoration: underline;
+}
+
+.login-wrapper button {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: var(--font-size-p);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem hsla(0, 0%, 0%, 0.2);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.login-wrapper .button-connect {
+  background-color: var(--color-secondary);
+}
+
+.login-wrapper button:hover {
+  filter: brightness(0.8);
+}
+
+.login-wrapper .create-account {
+  font-size: var(--font-size-small);
+  text-align: center;
+  margin: 1rem 0 0.75rem;
+}
+
+.login-wrapper .create-account p a {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-wrapper .create-account p a:hover {
+  text-decoration: underline;
+}
+
+.login-wrapper .button-connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 1rem;
+}
+
+.login-wrapper .button-connect .icon {
+  width: 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  .login-main {
+    flex-direction: column;
+  }
+
+  .login-wrapper {
+    margin: 0;
+  }
+}

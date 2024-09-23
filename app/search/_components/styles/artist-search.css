@@ -1,0 +1,51 @@
+.artist-search-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.25rem;
+  padding: 0.25rem 1rem;
+}
+
+.search-artist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-secondary);
+  padding: 1rem 2rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  width: 250px;
+  height: 300px;
+  text-align: center;
+}
+
+.search-artist-container Image {
+  width: auto;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.search-artist-container Image:hover {
+  border: 2px solid var(--color-primary);
+}
+
+.search-artist-container h3 {
+  margin: 10px;
+}
+
+.search-artist-container a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--color-primary);
+  margin: 10px;
+}
+
+.search-artist-container a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,19 @@
+.track_name {
+  @apply text-2xl lg:text-3xl font-satoshi font-semibold tracking-wide hover:underline hover:text-green-500 transition-colors duration-200;
+}
+
+.artist_name {
+  @apply text-sm font-extralight hover:underline hover:text-green-500 transition-colors duration-200;
+}
+
+.album_name {
+  @apply text-sm font-extralight hover:underline hover:text-green-500 transition-colors duration-200;
+}
+
+.explicit {
+  @apply absolute top-3 right-4 px-2 py-0.5 flex justify-center items-center bg-black rounded-md;
+}
+
+.more_button {
+  @apply flex justify-center items-center hover:text-green-500/70 transition-colors duration-200 cursor-pointer;
+}

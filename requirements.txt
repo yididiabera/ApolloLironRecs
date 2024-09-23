@@ -1,0 +1,9 @@
+flask
+flask_SQLAlchemy
+flask_cors
+requests
+gunicorn
+python-dotenv
+mysqlclient
+bcrypt
+lyricsgenius

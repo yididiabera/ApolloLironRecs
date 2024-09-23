@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+hr.separate-feature {
+  width: calc(100% - 15vw);
+  box-sizing: border-box;
+  border: 2px solid var(--color-primary);
+  margin: 2rem 0;
+  padding: 0 1rem;
+}

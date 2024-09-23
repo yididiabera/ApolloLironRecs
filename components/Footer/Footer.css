@@ -1,0 +1,23 @@
+.footer_content {
+  @apply w-3/4 lg:px-24 px-6 flex justify-between items-center gap-5;
+}
+
+.footer_about {
+  @apply max-w-96 flex flex-col items-center gap-5;
+}
+
+.footer_contact {
+  @apply max-w-96 flex flex-col gap-2;
+}
+
+.footer_bottom {
+  @apply w-full flex justify-center items-center gap-5;
+}
+footer a {
+  color: #add8e6; /* Light blue color */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+footer a:hover {
+  color: #87cefa; /* A slightly darker light blue on hover */
+}

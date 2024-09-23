@@ -1,0 +1,160 @@
+.track-main {
+  margin: 0;
+  padding: 3rem 6rem;
+}
+
+.track-head {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.track-title {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.track-image {
+  border: 2px solid white;
+  border-radius: 1rem;
+  margin: 0rem 2rem 0rem 0rem;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.track-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.track-artist-names {
+  display: flex;
+}
+
+.track-artist-name {
+  font-size: 30px;
+  transition: all 0.1s ease-in-out;
+}
+
+.track-artist-name:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
+}
+
+.track-album-name {
+  font-size: 20px;
+  color: rgb(160, 160, 160);
+}
+
+.track-main h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.track-lyrics-more {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.track-lyrics {
+  background-color: rgb(24, 24, 24);
+  padding: 2rem;
+  margin: 2rem 2rem 2rem 0rem;
+  border-radius: 2rem;
+  text-align: justify;
+  max-width: 800px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.track-lyrics p {
+  white-space: pre-wrap;
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.track-more-artist {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Custom scrollbar for Webkit browsers */
+.track-lyrics::-webkit-scrollbar {
+  width: 8px;
+}
+
+.track-lyrics::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.track-lyrics::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 2px solid #f1f1f1;
+}
+
+.track-lyrics::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 1000px) {
+  .track-main {
+    padding: 3rem 3rem;
+  }
+
+  .track-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .track-title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .track-image {
+    margin: 0rem 0rem 2rem 0rem;
+  }
+
+  .track-info {
+    align-items: center;
+  }
+
+  .track-title h1 {
+    font-size: 50px;
+  }
+
+  .track-artist-names {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .track-artist-name {
+    font-size: 20px;
+  }
+
+  .track-album-name {
+    font-size: 15px;
+  }
+
+  .track-main h2 {
+    font-size: 30px;
+  }
+
+  .track-lyrics-more {
+    grid-template-columns: 1fr;
+  }
+
+  .track-lyrics {
+    margin: 2rem 0rem 2rem 0rem;
+  }
+}
