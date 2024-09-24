@@ -17,13 +17,12 @@ ApolloLironRecs is a web application dedicated to music recommendations, designe
 
 ## Introduction
 
-ApolloLironRecs was born from our love for music and the ambition to create a seamless platform for discovering new tracks. Our team collaborated to craft an intuitive application that delivers top-notch music recommendations.
+ApolloLironRecs was born from my love for music and the ambition to create a seamless platform for discovering new tracks. I dedicated my time to craft an intuitive application that delivers top-notch music recommendations.
 
 ## Features
 
 - Explore tracks across a variety of genres.
 - Choose your preferred genres to receive tailored recommendations.
-- Add suggested tracks to your playlists.
 - Access detailed track information and listen via Spotify.
 
 ## Technology & Architecture
@@ -33,8 +32,6 @@ ApolloLironRecs employs a contemporary tech stack to ensure a smooth and efficie
 - **Frontend:** React, Next.js, Tailwind CSS
 - **Backend:** Python, Flask
 - **APIs:** Spotify API for music data
-- **Database:** MySQL for managing user and playlist data
-- **Authentication:** NextAuth.js for user authentication
 
 ## Core Algorithms
 

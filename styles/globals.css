@@ -16,7 +16,7 @@
   --font-size-p: 1rem;
   --font-size-small: 0.8rem;
 
-  --color-background: hsl(257, 100%, 0%);
+  --color-background: hsl(237, 35%, 22%);
   --color-primary: #45fc5e;
   --color-secondary: #167aac;
   --color-success: #28a745;
@@ -52,18 +52,6 @@
   top: 0;
 }
 
-.main::after {
-  content: "";
-  background-image: url(/assets/grid-line.png);
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  opacity: 0.4;
-  filter: invert(1);
-}
-
 .gradient {
   height: fit-content;
   z-index: 3;
@@ -72,20 +60,12 @@
 
   background-image: radial-gradient(
       circle at 27% 37%,
-      rgba(28, 218, 238, 1) 0%,
+      rgb(35, 3, 150) 0%,
       transparent 50%
     ),
-    radial-gradient(
-      circle at 97% 21%,
-      rgba(41, 109, 241, 1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 52% 99%,
-      rgba(214, 241, 41, 1) 0%,
-      transparent 50%
-    ),
-    radial-gradient(circle at 10% 29%, rgba(41, 241, 91, 1) 0%, transparent 50%),
+    radial-gradient(circle at 97% 21%, rgb(168, 41, 241) 0%, transparent 50%),
+    radial-gradient(circle at 52% 99%, rgb(144, 41, 241) 0%, transparent 50%),
+    radial-gradient(circle at 10% 29%, rgb(65, 5, 143) 0%, transparent 50%),
     radial-gradient(
       circle at 97% 96%,
       rgba(241, 147, 41, 1) 0%,
